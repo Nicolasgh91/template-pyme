@@ -1,0 +1,67 @@
+/* Fuentes: importá en main.tsx con @fontsource-variable/.../index.css */
+
+/* ─── Tema base: servicios (azul técnico) ─────────────────── */
+:root {
+  /* Colores */
+  --color-primary: #0058bc;
+  --color-primary-container: #0070eb;
+  --color-secondary: #5f5e60;
+  --color-secondary-container: #e2dfe1;
+  --color-on-secondary-container: #636264;
+  --color-surface: #f9f9fb;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f3f3f5;
+  --color-surface-container: #eeeef0;
+  --color-surface-container-high: #e8e8ea;
+  --color-surface-container-highest: #e2e2e4;
+  --color-on-surface: #1a1c1d;
+  --color-on-surface-variant: #414755;
+  --color-outline-variant: #c1c6d7;
+
+  /* Tipografía */
+  --font-display: 'Inter Variable', sans-serif;
+  --font-body: 'Inter Variable', sans-serif;
+
+  /* Glassmorphism — nav */
+  --glass-bg: rgba(249, 249, 251, 0.8);
+  --glass-blur: blur(20px);
+
+  /* Gradiente primario */
+  --gradient-primary: linear-gradient(135deg, #0058bc 0%, #0070eb 100%);
+
+  /* Sombra atmosférica */
+  --shadow-card: 0 4px 32px rgba(26, 28, 29, 0.04);
+}
+
+/* ─── Tema productos: gastronomía (verde esmeralda) ────────── */
+[data-theme='productos'] {
+  /* Colores */
+  --color-primary: #059669;
+  --color-primary-container: #10b981;
+  --color-secondary: #6b7280;
+  --color-secondary-container: #d1fae5;
+  --color-on-secondary-container: #065f46;
+  --color-surface: #f9fafb;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f0fdf4;
+  --color-surface-container: #dcfce7;
+  --color-surface-container-high: #bbf7d0;
+  --color-surface-container-highest: #a7f3d0;
+  --color-on-surface: #1c1917;
+  --color-on-surface-variant: #374151;
+  --color-outline-variant: #a7f3d0;
+
+  /* Tipografía */
+  --font-display: 'Outfit Variable', sans-serif;
+  --font-body: 'Outfit Variable', sans-serif;
+
+  /* Glassmorphism — nav */
+  --glass-bg: rgba(249, 250, 251, 0.85);
+  --glass-blur: blur(20px);
+
+  /* Gradiente primario */
+  --gradient-primary: linear-gradient(135deg, #065f46 0%, #059669 100%);
+
+  /* Sombra atmosférica */
+  --shadow-card: 0 4px 32px rgba(28, 25, 23, 0.04);
+}

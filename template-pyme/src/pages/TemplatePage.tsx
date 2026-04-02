@@ -1,20 +1,36 @@
+import { useEffect } from 'react'
 import type { TemplateConfig } from '../types/template'
+import { Navbar } from '../components/layout/Navbar'
+import { Footer } from '../components/layout/Footer'
+import { HeroAsymmetric } from '../components/ui/HeroAsymmetric'
+import { BentoGrid } from '../components/ui/BentoGrid'
+import { TestimonialsSection } from '../components/ui/TestimonialsSection'
+import { CtaSection } from '../components/ui/CtaSection'
 
 interface Props {
   config: TemplateConfig
 }
 
-/** Stub visual: sustituir por secciones del plan técnico (Navbar, Hero, Bento, etc.). */
+const PAGE_TITLE: Record<TemplateConfig['theme'], string> = {
+  servicios: 'Plantilla empresa de servicios',
+  productos: 'Plantilla home oferta de productos',
+}
+
 export function TemplatePage({ config }: Props) {
+  useEffect(() => {
+    document.title = PAGE_TITLE[config.theme]
+  }, [config.theme])
+
   return (
     <div data-theme={config.theme === 'productos' ? 'productos' : undefined}>
-      <main style={{ padding: '2rem', fontFamily: 'system-ui, sans-serif' }}>
-        <h1 style={{ marginTop: 0 }}>{config.label}</h1>
-        <p style={{ opacity: 0.8 }}>
-          Placeholder — implementar UI según{' '}
-          <code>plan_implementacion/tareas-tecnicas-template-pymes.md</code>.
-        </p>
+      <Navbar config={config} />
+      <main>
+        <HeroAsymmetric config={config} />
+        <BentoGrid config={config} />
+        <TestimonialsSection config={config} />
+        <CtaSection config={config} />
       </main>
+      <Footer config={config} />
     </div>
   )
 }

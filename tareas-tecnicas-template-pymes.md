@@ -6,6 +6,12 @@
 
 ---
 
+## Alcance del plan de validación (P7 / P8)
+
+Los hitos **P7** (router + página mínima) y **P8** (cuando aplique en tu checklist) cubren **scaffold, rutas y una página mínima** — no sustituyen las fases **A–D** de este documento. La **UI completa** (Tailwind, componentes, `TemplatePage` compuesto, datos ricos) sigue este archivo en orden **A → B → C → D**; el deploy operativo es la fase **E**. Si ves un stub o placeholder en una etapa intermedia, no es un fallo del plan de validación: es el alcance explícito de P7/P8 frente al producto final descrito aquí.
+
+---
+
 ## Reglas de ejecución obligatorias
 
 1. Seguir el orden de fases sin excepción: A → B → C → D → E → F.

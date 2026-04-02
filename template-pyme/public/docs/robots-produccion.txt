@@ -1,0 +1,4 @@
+# Copiar este archivo como public/robots.txt antes del go-live
+User-agent: *
+Allow: /
+Sitemap: https://tusitio.com/sitemap.xml
